@@ -2,17 +2,17 @@ import random
 
 
 # helper function to check if the entered value is a valid integer in the range 1-49
-def is_valid_number(number, used_numbers):
+def is_valid_number(lotto_number, used_numbers):
     try:
         # try to convert the entered value to integer
-        number = int(number)
+        lotto_number = int(lotto_number)
     except ValueError:
         # if it failed to convert, the value is invalid
         return False
-    if number in used_numbers:
+    if lotto_number in used_numbers:
         # if the entered value has already been used, the value is invalid
         return False
-    if number < 1 or number > 49:
+    if lotto_number < 1 or lotto_number > 49:
         # if the entered value is not in the range 1-49, the value is invalid
         return False
     # otherwise the value is correct
