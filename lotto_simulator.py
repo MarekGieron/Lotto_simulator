@@ -1,4 +1,14 @@
 import random
+"""
+    Check if the entered value is a valid integer in the range 1-49 and has not been used before.
+
+    Args:
+        lotto_number (str): A string containing the user's entered number to be validated.
+        used_numbers (list): A list of numbers that have already been used.
+
+    Returns:
+        bool: True if the entered value is a valid integer and has not been used before, False otherwise.
+    """
 
 
 # helper function to check if the entered value is a valid integer in the range 1-49
